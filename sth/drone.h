@@ -18,7 +18,7 @@ public:
 	drone();
 	void checkcargo();
 	void info();
-	void IncreseCeiling(int newCeiling);
-	void DecreaseCeiling(int newCeiling);
+	void increseCeiling(int newCeiling);
+	void decreaseCeiling(int newCeiling);
 };
 

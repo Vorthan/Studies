@@ -24,5 +24,7 @@ public:
 	drone* getEnd() { return m_end; };
 	drone* getNext(drone* ptr) { return ptr->next; };
 	drone* getPrev(drone* ptr) { return ptr->prev; };
+	void increseCellingAll(int newCelling);
+	void decreaseCellingAll(int newCelling);
 };
 

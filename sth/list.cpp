@@ -123,3 +123,24 @@ int droneList::remove(drone* ptr)
 	return m_size;
 }
 
+void droneList::increseCellingAll(int newCelling)
+{
+
+	drone* ptr = m_begin;
+	for (ptr = m_begin; ptr; ptr = ptr->next)
+	{
+		ptr->increseCeiling(newCelling);
+	}
+}
+
+void droneList::decreaseCellingAll(int newCelling)
+{
+	drone* ptr = m_begin;
+	for (ptr = m_begin; ptr; ptr = ptr->next)
+	{
+		ptr->decreaseCeiling(newCelling);
+	}
+}
+
+
+
